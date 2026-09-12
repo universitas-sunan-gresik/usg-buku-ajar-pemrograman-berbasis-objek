@@ -1,0 +1,8 @@
+.DS_Store
+~$*.docx
+*.tmp
+__pycache__/
+buku-ajar-pbo/kode/**/build/
+buku-ajar-pbo/kode/**/dist/
+buku-ajar-pbo/kode/**/nbproject/private/
+*.class
