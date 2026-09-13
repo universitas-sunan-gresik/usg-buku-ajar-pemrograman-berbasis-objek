@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="420" fill="#FFFFFF"/>
+  <text x="500" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">ARSITEKTUR APLIKASI - JDBC - DBMS</text>
+
+  <rect x="30" y="80" width="200" height="80" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="130" y="110" text-anchor="middle" font-size="13" fill="#1F2A33">Bab11Demo</text>
+  <text x="130" y="130" text-anchor="middle" font-size="11" fill="#5A6B7B">(kode aplikasi)</text>
+
+  <line x1="230" y1="120" x2="290" y2="120" stroke="#1F3B57" stroke-width="2" marker-end="url(#pj)"/>
+
+  <rect x="290" y="80" width="200" height="80" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="390" y="105" text-anchor="middle" font-size="13" fill="#1F2A33">BookDAOImpl</text>
+  <text x="390" y="123" text-anchor="middle" font-size="11" fill="#5A6B7B">PreparedStatement,</text>
+  <text x="390" y="139" text-anchor="middle" font-size="11" fill="#5A6B7B">ResultSet</text>
+
+  <line x1="490" y1="120" x2="550" y2="120" stroke="#1F3B57" stroke-width="2" marker-end="url(#pj)"/>
+
+  <rect x="550" y="80" width="200" height="80" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="650" y="105" text-anchor="middle" font-size="13" fill="#1F2A33">JDBC Driver</text>
+  <text x="650" y="123" text-anchor="middle" font-size="11" fill="#5A6B7B">mysql-connector-j</text>
+  <text x="650" y="139" text-anchor="middle" font-size="10" fill="#5A6B7B">(implementasi khusus DBMS)</text>
+
+  <line x1="750" y1="120" x2="810" y2="120" stroke="#1F3B57" stroke-width="2" marker-end="url(#pj)"/>
+  <text x="780" y="105" text-anchor="middle" font-size="10" fill="#5A6B7B">TCP :3306</text>
+
+  <rect x="810" y="80" width="160" height="80" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="890" y="110" text-anchor="middle" font-size="13" fill="#1F2A33">MariaDB</text>
+  <text x="890" y="130" text-anchor="middle" font-size="11" fill="#5A6B7B">sip_usg.books</text>
+
+  <rect x="60" y="210" width="880" height="180" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="238" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2A33">Peran Setiap Lapisan</text>
+  <text x="90" y="265" font-size="12" fill="#1F2A33"><tspan font-weight="bold">Aplikasi</tspan> hanya memanggil method DAO seperti <tspan font-family="Consolas, monospace">insert(book)</tspan>,</text>
+  <text x="90" y="285" font-size="12" fill="#1F2A33">tanpa pernah menuliskan SQL secara langsung.</text>
+  <text x="90" y="310" font-size="12" fill="#1F2A33"><tspan font-weight="bold">DAO</tspan> menyusun perintah SQL, mengirimkannya lewat <tspan font-family="Consolas, monospace">Connection</tspan>,</text>
+  <text x="90" y="330" font-size="12" fill="#1F2A33">dan memetakan hasilnya kembali menjadi objek <tspan font-family="Consolas, monospace">Book</tspan>.</text>
+  <text x="90" y="355" font-size="12" fill="#1F2A33"><tspan font-weight="bold">Driver JDBC</tspan> menerjemahkan panggilan Java menjadi protokol jaringan</text>
+  <text x="90" y="375" font-size="12" fill="#1F2A33">yang dipahami MariaDB; mengganti DBMS cukup mengganti driver ini.</text>
+
+  <defs>
+    <marker id="pj" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/></marker>
+  </defs>
+</svg>

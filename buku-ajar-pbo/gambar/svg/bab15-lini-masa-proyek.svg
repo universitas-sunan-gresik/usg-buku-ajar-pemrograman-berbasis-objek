@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="340" fill="#FFFFFF"/>
+  <text x="500" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">LINI MASA PROYEK TUGAS 4 (MINGGU KE-9 SAMPAI KE-16)</text>
+
+  <line x1="60" y1="80" x2="940" y2="80" stroke="#5A6B7B" stroke-width="2"/>
+
+  <rect x="60" y="60" width="110" height="40" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="115" y="84" text-anchor="middle" font-size="11" fill="#1F2A33">Minggu 9</text>
+
+  <rect x="200" y="60" width="220" height="40" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="310" y="84" text-anchor="middle" font-size="11" fill="#1F2A33">Minggu 10-11</text>
+
+  <rect x="450" y="60" width="330" height="40" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="615" y="84" text-anchor="middle" font-size="11" fill="#1F2A33">Minggu 12-14</text>
+
+  <rect x="810" y="60" width="65" height="40" rx="6" fill="#F3EAF7" stroke="#7A4E9E" stroke-width="2"/>
+  <text x="842" y="84" text-anchor="middle" font-size="10.5" fill="#1F2A33">Minggu 15</text>
+
+  <rect x="895" y="60" width="65" height="40" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="927" y="84" text-anchor="middle" font-size="10.5" fill="#1F2A33">Minggu 16</text>
+
+  <line x1="115" y1="100" x2="115" y2="130" stroke="#2E6DA4" stroke-width="1.5"/>
+  <rect x="30" y="130" width="170" height="90" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="115" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F2A33">Analisis</text>
+  <text x="115" y="168" text-anchor="middle" font-size="9.5" fill="#1F2A33">Tentukan ruang lingkup,</text>
+  <text x="115" y="183" text-anchor="middle" font-size="9.5" fill="#1F2A33">pengguna, dan kebutuhan</text>
+  <text x="115" y="198" text-anchor="middle" font-size="9.5" fill="#1F2A33">fungsional aplikasi</text>
+
+  <line x1="310" y1="100" x2="310" y2="130" stroke="#3E8E5A" stroke-width="1.5"/>
+  <rect x="220" y="130" width="180" height="90" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="1.5"/>
+  <text x="310" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F2A33">Perancangan</text>
+  <text x="310" y="168" text-anchor="middle" font-size="9.5" fill="#1F2A33">Diagram kelas UML,</text>
+  <text x="310" y="183" text-anchor="middle" font-size="9.5" fill="#1F2A33">rancangan skema tabel,</text>
+  <text x="310" y="198" text-anchor="middle" font-size="9.5" fill="#1F2A33">pemetaan MVC</text>
+
+  <line x1="615" y1="100" x2="615" y2="130" stroke="#D9822B" stroke-width="1.5"/>
+  <rect x="470" y="130" width="290" height="90" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="1.5"/>
+  <text x="615" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F2A33">Implementasi</text>
+  <text x="615" y="168" text-anchor="middle" font-size="9.5" fill="#1F2A33">Menulis kelas Model/View/Controller,</text>
+  <text x="615" y="183" text-anchor="middle" font-size="9.5" fill="#1F2A33">menerapkan Singleton dan Factory,</text>
+  <text x="615" y="198" text-anchor="middle" font-size="9.5" fill="#1F2A33">menghubungkan ke basis data</text>
+
+  <line x1="842" y1="100" x2="842" y2="130" stroke="#7A4E9E" stroke-width="1.5"/>
+  <rect x="790" y="130" width="105" height="90" rx="6" fill="#F3EAF7" stroke="#7A4E9E" stroke-width="1.5"/>
+  <text x="842" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F2A33">Pengujian</text>
+  <text x="842" y="168" text-anchor="middle" font-size="9" fill="#1F2A33">Uji integrasi</text>
+  <text x="842" y="181" text-anchor="middle" font-size="9" fill="#1F2A33">seluruh alur</text>
+  <text x="842" y="194" text-anchor="middle" font-size="9" fill="#1F2A33">CRUD dan GUI</text>
+
+  <line x1="927" y1="100" x2="927" y2="130" stroke="#B54444" stroke-width="1.5"/>
+  <rect x="900" y="130" width="80" height="90" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="1.5"/>
+  <text x="940" y="150" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1F2A33">Presentasi</text>
+  <text x="940" y="168" text-anchor="middle" font-size="8.5" fill="#1F2A33">Demonstrasi</text>
+  <text x="940" y="180" text-anchor="middle" font-size="8.5" fill="#1F2A33">dan tanya</text>
+  <text x="940" y="192" text-anchor="middle" font-size="8.5" fill="#1F2A33">jawab</text>
+
+  <rect x="30" y="245" width="940" height="75" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="268" text-anchor="middle" font-size="11.5" fill="#1F2A33">Keempat tahapan bersifat iteratif, bukan satu arah: temuan pada tahap Pengujian, misalnya kolom</text>
+  <text x="500" y="288" text-anchor="middle" font-size="11.5" fill="#1F2A33">basis data yang kurang tepat, lazim mendorong kelompok kembali meninjau ulang Perancangan</text>
+  <text x="500" y="308" text-anchor="middle" font-size="11.5" fill="#1F2A33">sebelum Implementasi dilanjutkan kembali.</text>
+</svg>

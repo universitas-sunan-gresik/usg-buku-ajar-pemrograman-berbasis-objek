@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="460" fill="#FFFFFF"/>
+  <text x="220" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F3B57">KELAS = cetak biru</text>
+  <text x="740" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#3E8E5A">OBJEK = wujud nyata</text>
+
+  <!-- Kelas Book -->
+  <rect x="40" y="55" width="360" height="240" rx="8" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="220" y="80" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F3B57">Book</text>
+  <line x1="40" y1="92" x2="400" y2="92" stroke="#2E6DA4" stroke-width="1.2"/>
+  <text x="55" y="112" font-size="12.5" fill="#1F2A33">title : String</text>
+  <text x="55" y="130" font-size="12.5" fill="#1F2A33">author : String</text>
+  <text x="55" y="148" font-size="12.5" fill="#1F2A33">isbn : String</text>
+  <text x="55" y="166" font-size="12.5" fill="#1F2A33">publicationYear : int</text>
+  <text x="55" y="184" font-size="12.5" fill="#1F2A33">available : boolean</text>
+  <line x1="40" y1="196" x2="400" y2="196" stroke="#2E6DA4" stroke-width="1.2"/>
+  <text x="55" y="216" font-size="12.5" fill="#1F2A33">Book()</text>
+  <text x="55" y="234" font-size="12.5" fill="#1F2A33">Book(title, author, isbn, tahun)</text>
+  <text x="55" y="252" font-size="12.5" fill="#1F2A33">getSummary() : String</text>
+  <text x="55" y="270" font-size="12.5" fill="#1F2A33">isPublishedAfter(tahun) : boolean</text>
+
+  <text x="220" y="330" text-anchor="middle" font-size="12.5" fill="#5A6B7B" font-style="italic">Hanya ada satu definisi Book</text>
+  <text x="220" y="348" text-anchor="middle" font-size="12.5" fill="#5A6B7B" font-style="italic">dalam program, tanpa nilai data.</text>
+
+  <line x1="400" y1="150" x2="500" y2="120" stroke="#5A6B7B" stroke-width="1.5" marker-end="url(#pn)"/>
+  <line x1="400" y1="200" x2="500" y2="230" stroke="#5A6B7B" stroke-width="1.5" marker-end="url(#pn)"/>
+  <text x="450" y="105" text-anchor="middle" font-size="12" fill="#5A6B7B">new Book(...)</text>
+  <text x="450" y="255" text-anchor="middle" font-size="12" fill="#5A6B7B">new Book(...)</text>
+
+  <!-- objek b1 -->
+  <rect x="620" y="60" width="340" height="130" rx="8" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="790" y="82" text-anchor="middle" font-size="14" font-weight="bold" fill="#215E3A">b1 : Book</text>
+  <line x1="620" y1="92" x2="960" y2="92" stroke="#3E8E5A" stroke-width="1.2"/>
+  <text x="635" y="112" font-size="12" fill="#1F2A33">title = "Basis Data"</text>
+  <text x="635" y="130" font-size="12" fill="#1F2A33">author = "Kadir, A."</text>
+  <text x="635" y="148" font-size="12" fill="#1F2A33">publicationYear = 2012</text>
+  <text x="635" y="166" font-size="12" fill="#1F2A33">available = true</text>
+
+  <!-- objek b2 -->
+  <rect x="620" y="205" width="340" height="130" rx="8" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="790" y="227" text-anchor="middle" font-size="14" font-weight="bold" fill="#215E3A">b2 : Book</text>
+  <line x1="620" y1="237" x2="960" y2="237" stroke="#3E8E5A" stroke-width="1.2"/>
+  <text x="635" y="257" font-size="12" fill="#1F2A33">title = "Struktur Data"</text>
+  <text x="635" y="275" font-size="12" fill="#1F2A33">author = "Sedgewick, R."</text>
+  <text x="635" y="293" font-size="12" fill="#1F2A33">publicationYear = 2016</text>
+  <text x="635" y="311" font-size="12" fill="#1F2A33">available = true</text>
+
+  <rect x="620" y="365" width="340" height="70" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="790" y="388" text-anchor="middle" font-size="12.5" fill="#1F2A33">Setiap objek menyimpan nilai atributnya</text>
+  <text x="790" y="406" text-anchor="middle" font-size="12.5" fill="#1F2A33">sendiri, walau berasal dari kelas sama.</text>
+
+  <defs>
+    <marker id="pn" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#5A6B7B"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="640" fill="#FFFFFF"/>
+  <text x="500" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">ABSTRACT CLASS VS INTERFACE PADA SIP-USG</text>
+
+  <!-- interfaces di atas -->
+  <rect x="60" y="60" width="230" height="110" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="175" y="80" text-anchor="middle" font-size="11" font-style="italic" fill="#7A4A16">&#171;interface&#187;</text>
+  <text x="175" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Borrowable</text>
+  <line x1="60" y1="108" x2="290" y2="108" stroke="#D9822B" stroke-width="1"/>
+  <text x="72" y="126" font-size="10.5" fill="#1F2A33">+ isAvailable() : boolean</text>
+  <text x="72" y="142" font-size="10.5" fill="#1F2A33">+ borrow()</text>
+  <text x="72" y="158" font-size="10.5" fill="#1F2A33">+ returnItem()</text>
+
+  <rect x="330" y="60" width="260" height="130" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="460" y="80" text-anchor="middle" font-size="11" font-style="italic" fill="#7A4A16">&#171;interface&#187;</text>
+  <text x="460" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Printable</text>
+  <line x1="330" y1="108" x2="590" y2="108" stroke="#D9822B" stroke-width="1"/>
+  <text x="342" y="126" font-size="10.5" fill="#1F2A33">+ getSummary() : String</text>
+  <text x="342" y="144" font-size="10.5" font-style="italic" fill="#1F2A33">+ printLabel()  [default]</text>
+  <text x="342" y="162" font-size="10.5" font-style="italic" fill="#1F2A33">+ formatCode(String)  [static]</text>
+
+  <!-- panah realisasi (putus-putus segitiga kosong) -->
+  <line x1="200" y1="170" x2="330" y2="270" stroke="#D9822B" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="480" y1="190" x2="440" y2="270" stroke="#D9822B" stroke-width="2" stroke-dasharray="6,4"/>
+  <path d="M420,255 L440,268 L420,281 Z" fill="#FFFFFF" stroke="#D9822B" stroke-width="2"/>
+
+  <!-- abstract class -->
+  <rect x="280" y="280" width="300" height="180" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="430" y="302" text-anchor="middle" font-size="13" font-weight="bold" font-style="italic" fill="#1F2A33">LibraryItem</text>
+  <text x="555" y="302" text-anchor="end" font-size="10" fill="#5A6B7B">(abstract)</text>
+  <line x1="280" y1="312" x2="580" y2="312" stroke="#2E6DA4" stroke-width="1"/>
+  <text x="292" y="330" font-size="10.5" fill="#1F2A33">- title, itemCode : String</text>
+  <text x="292" y="346" font-size="10.5" fill="#1F2A33">- available : boolean</text>
+  <line x1="280" y1="356" x2="580" y2="356" stroke="#2E6DA4" stroke-width="1"/>
+  <text x="292" y="374" font-size="10.5" fill="#1F2A33">+ borrow(), returnItem()  [terwujud]</text>
+  <text x="292" y="392" font-size="10.5" fill="#1F2A33">+ getSummary()  [terwujud]</text>
+  <text x="292" y="410" font-size="10.5" font-style="italic" fill="#1F2A33">+ calculateFine(long)  [abstrak]</text>
+  <text x="292" y="428" font-size="10" fill="#5A6B7B">wajib diisi oleh setiap subclass</text>
+
+  <!-- generalisasi ke subclass -->
+  <line x1="430" y1="460" x2="430" y2="500" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="180" y1="500" x2="680" y2="500" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="180" y1="500" x2="180" y2="530" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="430" y1="500" x2="430" y2="530" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="680" y1="500" x2="680" y2="530" stroke="#1F3B57" stroke-width="2"/>
+  <path d="M415,460 L430,485 L445,460 Z" fill="#FFFFFF" stroke="#1F3B57" stroke-width="2"/>
+
+  <rect x="80" y="530" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="180" y="560" text-anchor="middle" font-size="12" fill="#1F2A33">Book</text>
+  <rect x="330" y="530" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="430" y="560" text-anchor="middle" font-size="12" fill="#1F2A33">Journal</text>
+  <rect x="580" y="530" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="680" y="560" text-anchor="middle" font-size="12" fill="#1F2A33">DigitalItem</text>
+
+  <rect x="60" y="600" width="880" height="30" rx="4" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1"/>
+  <text x="500" y="620" text-anchor="middle" font-size="11.5" fill="#1F2A33">Garis putus + segitiga kosong = realisasi interface. Garis penuh + segitiga kosong = generalisasi (pewarisan kelas).</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#FFFFFF"/>
+  <text x="450" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F3B57">LAPISAN VISIBILITAS JAVA (DARI SEMPIT KE LUAS)</text>
+
+  <circle cx="450" cy="320" r="220" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <circle cx="450" cy="320" r="165" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <circle cx="450" cy="320" r="110" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <circle cx="450" cy="320" r="55" fill="#1F3B57"/>
+
+  <text x="450" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="#7A2E2E">public</text>
+  <text x="450" y="134" text-anchor="middle" font-size="10" fill="#1F2A33">+ kelas beda paket</text>
+
+  <text x="450" y="173" text-anchor="middle" font-size="13" font-weight="bold" fill="#7A4A16">protected</text>
+  <text x="450" y="189" text-anchor="middle" font-size="10" fill="#1F2A33">+ subclass beda paket</text>
+
+  <text x="450" y="228" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F3B57">default</text>
+  <text x="450" y="244" text-anchor="middle" font-size="10" fill="#1F2A33">+ kelas sepaket</text>
+
+  <text x="450" y="315" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">private</text>
+  <text x="450" y="332" text-anchor="middle" font-size="10" fill="#FFFFFF">hanya kelas ini</text>
+
+  <text x="120" y="313" text-anchor="middle" font-size="10.5" fill="#5A6B7B">dapat diakses</text>
+  <text x="120" y="329" text-anchor="middle" font-size="10.5" fill="#5A6B7B">kelas mana pun</text>
+  <line x1="160" y1="320" x2="232" y2="320" stroke="#B54444" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+  <rect x="130" y="500" width="640" height="50" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="450" y="521" text-anchor="middle" font-size="12" fill="#1F2A33">Setiap lapisan luar mencakup seluruh hak akses lapisan</text>
+  <text x="450" y="538" text-anchor="middle" font-size="12" fill="#1F2A33">di dalamnya, ditambah cakupan barunya sendiri.</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="620" fill="#FFFFFF"/>
+
+  <!-- garis penghubung -->
+  <line x1="450" y1="310" x2="450" y2="120" stroke="#B9C2CA" stroke-width="2"/>
+  <line x1="450" y1="310" x2="720" y2="220" stroke="#B9C2CA" stroke-width="2"/>
+  <line x1="450" y1="310" x2="720" y2="420" stroke="#B9C2CA" stroke-width="2"/>
+  <line x1="450" y1="310" x2="450" y2="510" stroke="#B9C2CA" stroke-width="2"/>
+  <line x1="450" y1="310" x2="180" y2="420" stroke="#B9C2CA" stroke-width="2"/>
+  <line x1="450" y1="310" x2="180" y2="220" stroke="#B9C2CA" stroke-width="2"/>
+
+  <!-- pusat -->
+  <circle cx="450" cy="310" r="95" fill="#1F3B57"/>
+  <text x="450" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#FFFFFF">PEMROGRAMAN</text>
+  <text x="450" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#FFFFFF">BERORIENTASI</text>
+  <text x="450" y="340" text-anchor="middle" font-size="16" font-weight="bold" fill="#FFFFFF">OBJEK</text>
+
+  <!-- Enkapsulasi (atas) -->
+  <circle cx="450" cy="90" r="80" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2.5"/>
+  <text x="450" y="80" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F3B57">Enkapsulasi</text>
+  <text x="450" y="100" text-anchor="middle" font-size="10.5" fill="#1F2A33">membungkus data</text>
+  <text x="450" y="114" text-anchor="middle" font-size="10.5" fill="#1F2A33">+ melindunginya</text>
+
+  <!-- Pewarisan (kanan atas) -->
+  <circle cx="770" cy="220" r="80" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2.5"/>
+  <text x="770" y="210" text-anchor="middle" font-size="15" font-weight="bold" fill="#215E3A">Pewarisan</text>
+  <text x="770" y="230" text-anchor="middle" font-size="10.5" fill="#1F2A33">mewariskan sifat</text>
+  <text x="770" y="244" text-anchor="middle" font-size="10.5" fill="#1F2A33">ke subclass</text>
+
+  <!-- Polimorfisme (kanan bawah) -->
+  <circle cx="770" cy="420" r="80" fill="#FFF7F0" stroke="#D9822B" stroke-width="2.5"/>
+  <text x="770" y="410" text-anchor="middle" font-size="15" font-weight="bold" fill="#7A4A16">Polimorfisme</text>
+  <text x="770" y="430" text-anchor="middle" font-size="10.5" fill="#1F2A33">satu perintah,</text>
+  <text x="770" y="444" text-anchor="middle" font-size="10.5" fill="#1F2A33">wujud beragam</text>
+
+  <!-- Abstraksi (bawah) -->
+  <circle cx="450" cy="550" r="80" fill="#F3EAF7" stroke="#7A4E9E" stroke-width="2.5"/>
+  <text x="450" y="540" text-anchor="middle" font-size="15" font-weight="bold" fill="#4B2E66">Abstraksi</text>
+  <text x="450" y="560" text-anchor="middle" font-size="10.5" fill="#1F2A33">menyembunyikan</text>
+  <text x="450" y="574" text-anchor="middle" font-size="10.5" fill="#1F2A33">detail rumit</text>
+
+  <!-- pengisi kiri agar seimbang (label mengarah kembali ke pilar-pilar sebelah kanan) -->
+  <circle cx="130" cy="220" r="80" fill="#FBE7E7" stroke="#B54444" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="130" y="212" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7A2E2E">Fondasi</text>
+  <text x="130" y="230" text-anchor="middle" font-size="10.5" fill="#1F2A33">Kelas &amp; Objek</text>
+  <text x="130" y="244" text-anchor="middle" font-size="10.5" fill="#1F2A33">(Bab II-IV)</text>
+
+  <circle cx="130" cy="420" r="80" fill="#EFEFF5" stroke="#5A6B7B" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="130" y="410" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#333F4C">Penerapan</text>
+  <text x="130" y="428" text-anchor="middle" font-size="10.5" fill="#1F2A33">Data, GUI, Desain</text>
+  <text x="130" y="442" text-anchor="middle" font-size="10.5" fill="#1F2A33">(Bab VIII-XV)</text>
+</svg>

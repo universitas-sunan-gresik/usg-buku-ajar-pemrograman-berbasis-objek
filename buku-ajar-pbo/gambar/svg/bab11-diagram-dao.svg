@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 480" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="480" fill="#FFFFFF"/>
+  <text x="475" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">DIAGRAM KELAS LAPISAN DAO</text>
+
+  <rect x="360" y="60" width="230" height="46" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="475" y="82" text-anchor="middle" font-size="12" fill="#1F2A33">Bab11Demo (aplikasi)</text>
+
+  <line x1="475" y1="106" x2="475" y2="140" stroke="#1F3B57" stroke-width="2" marker-end="url(#pd)"/>
+
+  <rect x="330" y="150" width="290" height="46" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="475" y="169" text-anchor="middle" font-size="11.5" font-style="italic" fill="#1F2A33">&#171;interface&#187; BookDAO</text>
+  <text x="475" y="186" text-anchor="middle" font-size="10" fill="#5A6B7B">insert, findByCode, findAll, update, delete</text>
+
+  <line x1="475" y1="196" x2="475" y2="230" stroke="#D9822B" stroke-width="2" stroke-dasharray="6,4"/>
+  <path d="M460,215 L475,230 L490,215 Z" fill="#FFFFFF" stroke="#D9822B" stroke-width="2"/>
+
+  <rect x="330" y="240" width="290" height="70" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="475" y="262" text-anchor="middle" font-size="12" fill="#1F2A33">BookDAOImpl</text>
+  <text x="475" y="280" text-anchor="middle" font-size="10.5" fill="#5A6B7B">SQL_INSERT, SQL_FIND_ALL, ...</text>
+  <text x="475" y="296" text-anchor="middle" font-size="10.5" fill="#5A6B7B">toBook(ResultSet)</text>
+
+  <line x1="475" y1="310" x2="475" y2="345" stroke="#1F3B57" stroke-width="2" marker-end="url(#pd)"/>
+
+  <rect x="345" y="355" width="260" height="46" rx="6" fill="#1F3B57"/>
+  <text x="475" y="383" text-anchor="middle" font-size="12" fill="#FFFFFF">DatabaseConnection</text>
+
+  <rect x="700" y="240" width="180" height="70" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="790" y="262" text-anchor="middle" font-size="12" fill="#1F2A33">Book</text>
+  <text x="790" y="280" text-anchor="middle" font-size="10.5" fill="#5A6B7B">(dipetakan dari</text>
+  <text x="790" y="296" text-anchor="middle" font-size="10.5" fill="#5A6B7B">baris tabel books)</text>
+  <line x1="620" y1="270" x2="700" y2="270" stroke="#5A6B7B" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="60" y="420" width="830" height="50" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="475" y="442" text-anchor="middle" font-size="12" fill="#1F2A33">Aplikasi hanya bergantung pada interface BookDAO, bukan BookDAOImpl:</text>
+  <text x="475" y="460" text-anchor="middle" font-size="12" fill="#1F2A33">implementasinya dapat diganti tanpa mengubah kode pemanggil.</text>
+
+  <defs>
+    <marker id="pd" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/></marker>
+  </defs>
+</svg>

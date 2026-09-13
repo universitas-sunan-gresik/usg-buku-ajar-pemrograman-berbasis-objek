@@ -6,3 +6,5 @@ buku-ajar-pbo/kode/**/build/
 buku-ajar-pbo/kode/**/dist/
 buku-ajar-pbo/kode/**/nbproject/private/
 *.class
+.tools/
+buku-ajar-pbo/keluaran/

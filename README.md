@@ -11,14 +11,17 @@ Penulis: Muhammad Muchson Attoyibi, S.Pd., M.Pd.
 | Tahap | Keterangan | Status |
 |---|---|---|
 | 0 | Penyiapan aturan, kerangka repositori, dan gaya Word | **selesai** |
-| 1 | Kerangka front matter dan 15 bab | berjalan |
-| 2 | Penulisan isi Bab I sampai Bab XV | belum |
-| 3 | Back matter: pustaka, glosarium, lampiran, biografi, sinopsis | belum |
-| 4 | Perakitan naskah akhir ke satu berkas .docx | belum |
-| 5 | Pemeriksaan akhir dan ekspor PDF pratinjau | belum |
+| 1 | Kerangka front matter dan 15 bab | **selesai** |
+| 2 | Penulisan isi Bab I sampai Bab XV | **selesai** |
+| 3 | Back matter: pustaka, glosarium, lampiran, biografi, sinopsis | **selesai** |
+| 4 | Perakitan naskah akhir ke satu berkas .docx | **selesai** |
+| 5 | Pemeriksaan akhir dan ekspor PDF pratinjau | **selesai** |
 
-Isi bab **belum ditulis**. Berkas `.docx` yang ada saat ini adalah kerangka kosong
-yang sudah memakai seluruh standar tata letak.
+Seluruh 15 bab telah ditulis lengkap (Blok 1–12 per bab, kode Java teruji kompilasi pada JDK 21,
+diagram SVG asli, dan tangkapan layar GUI/keluaran program sungguhan), tidak ada lagi penanda
+`[TAHAP n]` yang tersisa pada naskah. Back matter mencakup Daftar Pustaka (8 sumber wajib RPS),
+Glosarium (100+ entri beralfabet), Lampiran A–D (kisi-kisi UTS/UAS, panduan proyek akhir, rubrik
+ringkas), Biografi Penulis, dan Sinopsis Buku. Naskah lengkap ~248 halaman setelah dirakit.
 
 ## Struktur
 
@@ -45,10 +48,13 @@ Ringkasnya:
 - Studi kasus berkelanjutan: **Sistem Informasi Perpustakaan USG (SIP-USG)**.
 - Lingkungan teknis: **JDK 21, Apache NetBeans, MySQL/MariaDB, JDBC, Swing**.
 
-## Membangun ulang kerangka .docx
+## Membangun .docx dari naskah
 
 ```bash
 pip install python-docx
 cd buku-ajar-pbo
-python3 tools/build_docx.py
+python tools/build_docx.py
 ```
+
+Konvensi penulisan Markdown dan langkah pembaruan daftar isi ada di
+[buku-ajar-pbo/README.md](buku-ajar-pbo/README.md).

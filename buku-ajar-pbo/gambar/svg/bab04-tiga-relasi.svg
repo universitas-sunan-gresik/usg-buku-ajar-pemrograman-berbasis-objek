@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="620" fill="#FFFFFF"/>
+
+  <!-- ASOSIASI -->
+  <text x="170" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F3B57">ASOSIASI</text>
+  <rect x="40" y="60" width="130" height="50" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="105" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Loan</text>
+  <rect x="210" y="60" width="130" height="50" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="275" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Member</text>
+  <line x1="170" y1="85" x2="210" y2="85" stroke="#1F3B57" stroke-width="2"/>
+  <text x="115" y="140" text-anchor="middle" font-size="11" fill="#5A6B7B">garis polos:</text>
+  <text x="115" y="156" text-anchor="middle" font-size="11" fill="#5A6B7B">sekadar "tahu tentang"</text>
+  <text x="115" y="172" text-anchor="middle" font-size="11" fill="#5A6B7B">(Loan menyimpan referensi</text>
+  <text x="115" y="188" text-anchor="middle" font-size="11" fill="#5A6B7B">ke Member)</text>
+
+  <!-- AGREGASI -->
+  <text x="500" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#215E3A">AGREGASI</text>
+  <rect x="370" y="60" width="130" height="50" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="435" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Catalog</text>
+  <rect x="540" y="60" width="130" height="50" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="605" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Book</text>
+  <path d="M500,85 L520,75 L540,85 L520,95 Z" fill="#FFFFFF" stroke="#3E8E5A" stroke-width="2"/>
+  <line x1="520" y1="85" x2="540" y2="85" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="445" y="140" text-anchor="middle" font-size="11" fill="#5A6B7B">diamond kosong:</text>
+  <text x="445" y="156" text-anchor="middle" font-size="11" fill="#5A6B7B">"memiliki", tetapi Book</text>
+  <text x="445" y="172" text-anchor="middle" font-size="11" fill="#5A6B7B">tetap ada walau Catalog</text>
+  <text x="445" y="188" text-anchor="middle" font-size="11" fill="#5A6B7B">dihapus</text>
+
+  <!-- KOMPOSISI -->
+  <text x="850" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#7A2E2E">KOMPOSISI</text>
+  <rect x="740" y="60" width="110" height="50" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="795" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Book</text>
+  <rect x="890" y="60" width="90" height="50" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="935" y="90" text-anchor="middle" font-size="13" fill="#1F2A33">Isbn</text>
+  <path d="M850,85 L868,75 L886,85 L868,95 Z" fill="#B54444" stroke="#B54444" stroke-width="2"/>
+  <line x1="868" y1="85" x2="890" y2="85" stroke="#B54444" stroke-width="2"/>
+  <text x="860" y="140" text-anchor="middle" font-size="11" fill="#5A6B7B">diamond terisi:</text>
+  <text x="860" y="156" text-anchor="middle" font-size="11" fill="#5A6B7B">"bagian mutlak"; Isbn</text>
+  <text x="860" y="172" text-anchor="middle" font-size="11" fill="#5A6B7B">ikut lenyap jika objek</text>
+  <text x="860" y="188" text-anchor="middle" font-size="11" fill="#5A6B7B">Book-nya dihapus</text>
+
+  <rect x="60" y="230" width="880" height="330" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="262" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A33">Perbandingan Ketiga Relasi pada SIP-USG</text>
+
+  <text x="90" y="300" font-size="13" font-weight="bold" fill="#1F3B57">Asosiasi (Loan &#8212; Member, Loan &#8212; Book)</text>
+  <text x="105" y="322" font-size="12.5" fill="#1F2A33">Loan menyimpan referensi ke Member dan Book yang sudah</text>
+  <text x="105" y="342" font-size="12.5" fill="#1F2A33">ada. Ketiganya punya siklus hidup masing-masing yang bebas.</text>
+
+  <text x="90" y="385" font-size="13" font-weight="bold" fill="#215E3A">Agregasi (Catalog &#9671; Book)</text>
+  <text x="105" y="407" font-size="12.5" fill="#1F2A33">Catalog mengumpulkan Book yang dibuat di luar dirinya.</text>
+  <text x="105" y="427" font-size="12.5" fill="#1F2A33">Book tidak "milik eksklusif" satu Catalog dan tetap berarti</text>
+  <text x="105" y="447" font-size="12.5" fill="#1F2A33">sendirian walau Catalog-nya dibongkar.</text>
+
+  <text x="90" y="490" font-size="13" font-weight="bold" fill="#7A2E2E">Komposisi (Book &#9670; Isbn)</text>
+  <text x="105" y="512" font-size="12.5" fill="#1F2A33">Isbn dibuat bersamaan dengan Book di dalam constructor</text>
+  <text x="105" y="532" font-size="12.5" fill="#1F2A33">dan tidak berarti apa pun dilepaskan dari Book pemiliknya.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="480" fill="#FFFFFF"/>
+  <text x="500" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">HIERARKI KOMPONEN SWING PADA BookFormFrame</text>
+
+  <rect x="380" y="55" width="240" height="46" rx="6" fill="#1F3B57"/>
+  <text x="500" y="83" text-anchor="middle" font-size="13" fill="#FFFFFF">JFrame (BookFormFrame)</text>
+
+  <line x1="500" y1="101" x2="500" y2="130" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="250" y1="130" x2="750" y2="130" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="250" y1="130" x2="250" y2="155" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="750" y1="130" x2="750" y2="155" stroke="#1F3B57" stroke-width="2"/>
+
+  <rect x="150" y="155" width="200" height="46" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="250" y="177" text-anchor="middle" font-size="12" fill="#1F2A33">JPanel (form, NORTH)</text>
+  <text x="250" y="193" text-anchor="middle" font-size="9.5" fill="#5A6B7B">GridLayout(2,1)</text>
+
+  <rect x="650" y="155" width="200" height="46" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="750" y="177" text-anchor="middle" font-size="12" fill="#1F2A33">JScrollPane (CENTER)</text>
+  <text x="750" y="193" text-anchor="middle" font-size="9.5" fill="#5A6B7B">membungkus JTable</text>
+
+  <line x1="180" y1="201" x2="180" y2="225" stroke="#2E6DA4" stroke-width="1.5"/>
+  <line x1="320" y1="201" x2="320" y2="225" stroke="#2E6DA4" stroke-width="1.5"/>
+
+  <rect x="70" y="225" width="220" height="60" rx="5" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="180" y="248" text-anchor="middle" font-size="11" fill="#1F2A33">baris1 (FlowLayout)</text>
+  <text x="180" y="265" text-anchor="middle" font-size="10" fill="#5A6B7B">5x JTextField</text>
+
+  <rect x="300" y="225" width="220" height="60" rx="5" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="410" y="248" text-anchor="middle" font-size="11" fill="#1F2A33">baris2 (FlowLayout)</text>
+  <text x="410" y="265" text-anchor="middle" font-size="10" fill="#5A6B7B">3x JButton</text>
+
+  <line x1="750" y1="201" x2="750" y2="225" stroke="#3E8E5A" stroke-width="1.5"/>
+  <rect x="650" y="225" width="200" height="60" rx="5" fill="#FFFFFF" stroke="#3E8E5A" stroke-width="1.5"/>
+  <text x="750" y="248" text-anchor="middle" font-size="11" fill="#1F2A33">JTable</text>
+  <text x="750" y="265" text-anchor="middle" font-size="10" fill="#5A6B7B">+ DefaultTableModel</text>
+
+  <rect x="60" y="320" width="880" height="130" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="348" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2A33">Container dan Component</text>
+  <text x="90" y="375" font-size="12" fill="#1F2A33"><tspan font-family="Consolas, monospace">JFrame</tspan>, <tspan font-family="Consolas, monospace">JPanel</tspan>, dan <tspan font-family="Consolas, monospace">JScrollPane</tspan> adalah <tspan font-weight="bold">Container</tspan>: dapat menampung</text>
+  <text x="90" y="395" font-size="12" fill="#1F2A33">komponen lain dan mengatur tata letaknya lewat <tspan font-family="Consolas, monospace">LayoutManager</tspan>.</text>
+  <text x="90" y="420" font-size="12" fill="#1F2A33"><tspan font-family="Consolas, monospace">JTextField</tspan>, <tspan font-family="Consolas, monospace">JButton</tspan>, dan <tspan font-family="Consolas, monospace">JTable</tspan> adalah <tspan font-weight="bold">Component</tspan> yang berinteraksi</text>
+  <text x="90" y="440" font-size="12" fill="#1F2A33">langsung dengan pengguna, dan selalu berada di dalam sebuah Container.</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 560" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="560" fill="#FFFFFF"/>
+  <text x="475" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">ALUR EKSEKUSI TRY-CATCH-FINALLY</text>
+
+  <rect x="370" y="55" width="210" height="46" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="475" y="83" text-anchor="middle" font-size="12.5" font-family="Consolas, monospace" fill="#1F2A33">blok try</text>
+
+  <line x1="475" y1="101" x2="475" y2="140" stroke="#1F3B57" stroke-width="2"/>
+  <path d="M475,140 L450,175 L500,175 Z" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.5"/>
+  <text x="475" y="151" text-anchor="middle" font-size="10.5" fill="#1F2A33">terjadi</text>
+  <text x="475" y="164" text-anchor="middle" font-size="10.5" fill="#1F2A33">eksepsi?</text>
+
+  <line x1="450" y1="175" x2="230" y2="230" stroke="#B54444" stroke-width="2"/>
+  <text x="300" y="215" font-size="12" fill="#B54444">Ya</text>
+  <line x1="500" y1="175" x2="720" y2="230" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="660" y="215" font-size="12" fill="#3E8E5A">Tidak</text>
+
+  <rect x="130" y="230" width="200" height="60" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="230" y="255" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#1F2A33">blok catch yang</text>
+  <text x="230" y="273" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#1F2A33">cocok dijalankan</text>
+
+  <rect x="620" y="230" width="200" height="60" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="720" y="255" text-anchor="middle" font-size="12" fill="#1F2A33">sisa blok try</text>
+  <text x="720" y="273" text-anchor="middle" font-size="12" fill="#1F2A33">selesai normal</text>
+
+  <line x1="230" y1="290" x2="230" y2="330" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="720" y1="290" x2="720" y2="330" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="230" y1="330" x2="475" y2="330" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="720" y1="330" x2="475" y2="330" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="475" y1="330" x2="475" y2="360" stroke="#1F3B57" stroke-width="2" marker-end="url(#pd)"/>
+
+  <rect x="370" y="360" width="210" height="50" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="475" y="390" text-anchor="middle" font-size="13" font-weight="bold" font-family="Consolas, monospace" fill="#1F2A33">blok finally</text>
+
+  <line x1="475" y1="410" x2="475" y2="445" stroke="#1F3B57" stroke-width="2" marker-end="url(#pd)"/>
+
+  <rect x="360" y="445" width="230" height="46" rx="6" fill="#1F3B57"/>
+  <text x="475" y="473" text-anchor="middle" font-size="12.5" fill="#FFFFFF">program berlanjut</text>
+
+  <rect x="60" y="505" width="830" height="45" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="475" y="532" text-anchor="middle" font-size="12" fill="#1F2A33"><tspan font-family="Consolas, monospace">finally</tspan> SELALU dijalankan, baik try berhasil, ditangkap catch, maupun tidak tertangkap sama sekali.</text>
+
+  <defs>
+    <marker id="pd" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/></marker>
+  </defs>
+</svg>

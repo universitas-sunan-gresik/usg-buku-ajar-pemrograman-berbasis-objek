@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="620" fill="#FFFFFF"/>
+  <!-- Judul kolom -->
+  <text x="250" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#B54444">PENDEKATAN PROSEDURAL</text>
+  <text x="750" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#3E8E5A">PENDEKATAN BERORIENTASI OBJEK</text>
+  <line x1="500" y1="50" x2="500" y2="600" stroke="#C7CDD3" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <!-- KIRI: array terpisah -->
+  <g>
+    <rect x="40" y="70" width="150" height="46" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="1.5"/>
+    <text x="115" y="98" text-anchor="middle" font-size="14" fill="#1F2A33">judul[]</text>
+    <rect x="205" y="70" width="150" height="46" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="1.5"/>
+    <text x="280" y="98" text-anchor="middle" font-size="14" fill="#1F2A33">penulis[]</text>
+    <rect x="370" y="70" width="110" height="46" rx="6" fill="#FBE7E7" stroke="#B54444" stroke-width="1.5"/>
+    <text x="425" y="98" text-anchor="middle" font-size="13" fill="#1F2A33">tersedia[]</text>
+
+    <rect x="60" y="220" width="180" height="50" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.5"/>
+    <text x="150" y="250" text-anchor="middle" font-size="14" fill="#1F2A33">tampilkanBuku(i)</text>
+    <rect x="270" y="220" width="170" height="50" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.5"/>
+    <text x="355" y="250" text-anchor="middle" font-size="14" fill="#1F2A33">pinjamBuku(i)</text>
+
+    <!-- garis silang menunjukkan keterikatan banyak-ke-banyak -->
+    <line x1="150" y1="220" x2="115" y2="116" stroke="#B54444" stroke-width="1.2"/>
+    <line x1="150" y1="220" x2="280" y2="116" stroke="#B54444" stroke-width="1.2"/>
+    <line x1="150" y1="220" x2="425" y2="116" stroke="#B54444" stroke-width="1.2"/>
+    <line x1="355" y1="220" x2="115" y2="116" stroke="#B54444" stroke-width="1.2"/>
+    <line x1="355" y1="220" x2="280" y2="116" stroke="#B54444" stroke-width="1.2"/>
+    <line x1="355" y1="220" x2="425" y2="116" stroke="#B54444" stroke-width="1.2"/>
+
+    <rect x="55" y="310" width="400" height="80" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="1.2"/>
+    <text x="255" y="338" text-anchor="middle" font-size="12.5" fill="#7A4A16" font-style="italic">Setiap method harus tahu urutan</text>
+    <text x="255" y="357" text-anchor="middle" font-size="12.5" fill="#7A4A16" font-style="italic">indeks pada ketiga larik sekaligus,</text>
+    <text x="255" y="376" text-anchor="middle" font-size="12.5" fill="#7A4A16" font-style="italic">rawan salah saat larik bertambah.</text>
+
+    <text x="255" y="430" text-anchor="middle" font-size="13" fill="#5A6B7B">Data dan perilaku terpisah;</text>
+    <text x="255" y="450" text-anchor="middle" font-size="13" fill="#5A6B7B">keterikatan tersembunyi lewat indeks.</text>
+  </g>
+
+  <!-- KANAN: kelas menyatukan data + perilaku -->
+  <g>
+    <rect x="560" y="70" width="380" height="150" rx="8" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+    <text x="750" y="95" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F3B57">BukuSederhana</text>
+    <line x1="560" y1="106" x2="940" y2="106" stroke="#2E6DA4" stroke-width="1.2"/>
+    <text x="580" y="128" font-size="13" fill="#1F2A33">- judul : String</text>
+    <text x="580" y="148" font-size="13" fill="#1F2A33">- penulis : String</text>
+    <text x="580" y="168" font-size="13" fill="#1F2A33">- tersedia : boolean</text>
+    <line x1="560" y1="180" x2="940" y2="180" stroke="#2E6DA4" stroke-width="1.2"/>
+    <text x="580" y="200" font-size="13" fill="#1F2A33">+ tampilkan()</text>
+    <text x="750" y="200" font-size="13" fill="#1F2A33">+ pinjam()</text>
+
+    <line x1="700" y1="220" x2="660" y2="290" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#panahBiru)"/>
+    <line x1="800" y1="220" x2="850" y2="290" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#panahBiru)"/>
+
+    <rect x="560" y="300" width="190" height="56" rx="6" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+    <text x="655" y="323" text-anchor="middle" font-size="13" fill="#1F2A33">b1 : BukuSederhana</text>
+    <text x="655" y="342" text-anchor="middle" font-size="11.5" fill="#5A6B7B">judul = "Basis Data"</text>
+
+    <rect x="770" y="300" width="190" height="56" rx="6" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+    <text x="865" y="323" text-anchor="middle" font-size="13" fill="#1F2A33">b2 : BukuSederhana</text>
+    <text x="865" y="342" text-anchor="middle" font-size="11.5" fill="#5A6B7B">judul = "Struktur Data"</text>
+
+    <text x="750" y="430" text-anchor="middle" font-size="13" fill="#5A6B7B">Data dan perilaku menyatu dalam</text>
+    <text x="750" y="450" text-anchor="middle" font-size="13" fill="#5A6B7B">satu kelas; setiap objek mandiri.</text>
+  </g>
+
+  <defs>
+    <marker id="panahBiru" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#2E6DA4"/>
+    </marker>
+  </defs>
+</svg>

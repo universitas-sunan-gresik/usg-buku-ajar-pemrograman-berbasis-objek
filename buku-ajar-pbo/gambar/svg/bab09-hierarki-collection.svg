@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="520" fill="#FFFFFF"/>
+  <text x="500" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">HIERARKI COLLECTION FRAMEWORK</text>
+
+  <rect x="90" y="55" width="200" height="46" rx="6" fill="#1F3B57"/>
+  <text x="190" y="83" text-anchor="middle" font-size="12.5" font-style="italic" fill="#FFFFFF">&#171;interface&#187; Collection</text>
+
+  <line x1="190" y1="101" x2="190" y2="130" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="70" y1="130" x2="310" y2="130" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="70" y1="130" x2="70" y2="155" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="190" y1="130" x2="190" y2="155" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="310" y1="130" x2="310" y2="155" stroke="#1F3B57" stroke-width="2"/>
+
+  <rect x="20" y="155" width="100" height="40" rx="5" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="70" y="180" text-anchor="middle" font-size="11.5" font-style="italic" fill="#1F2A33">List</text>
+  <rect x="140" y="155" width="100" height="40" rx="5" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="190" y="180" text-anchor="middle" font-size="11.5" font-style="italic" fill="#1F2A33">Set</text>
+  <rect x="260" y="155" width="100" height="40" rx="5" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="310" y="180" text-anchor="middle" font-size="11.5" font-style="italic" fill="#1F2A33">Queue</text>
+
+  <line x1="70" y1="195" x2="70" y2="215" stroke="#2E6DA4" stroke-width="1.5"/>
+  <line x1="15" y1="215" x2="125" y2="215" stroke="#2E6DA4" stroke-width="1.5"/>
+  <line x1="15" y1="215" x2="15" y2="225" stroke="#2E6DA4" stroke-width="1.5"/>
+  <line x1="125" y1="215" x2="125" y2="225" stroke="#2E6DA4" stroke-width="1.5"/>
+
+  <rect x="0" y="225" width="90" height="36" rx="4" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="45" y="248" text-anchor="middle" font-size="10" font-family="Consolas, monospace" fill="#1F2A33">ArrayList</text>
+
+  <rect x="120" y="225" width="90" height="36" rx="4" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="165" y="248" text-anchor="middle" font-size="10" font-family="Consolas, monospace" fill="#1F2A33">LinkedList</text>
+
+  <line x1="190" y1="195" x2="190" y2="225" stroke="#3E8E5A" stroke-width="1.5"/>
+  <rect x="235" y="225" width="90" height="36" rx="4" fill="#FFFFFF" stroke="#3E8E5A" stroke-width="1.5"/>
+  <text x="280" y="248" text-anchor="middle" font-size="10" font-family="Consolas, monospace" fill="#1F2A33">HashSet</text>
+
+  <text x="190" y="330" text-anchor="middle" font-size="11" fill="#5A6B7B">(Collection = akar bersama</text>
+  <text x="190" y="346" text-anchor="middle" font-size="11" fill="#5A6B7B">yang dapat diiterasi satu-satu)</text>
+
+  <!-- Map terpisah -->
+  <rect x="640" y="55" width="220" height="46" rx="6" fill="#7A4E9E"/>
+  <text x="750" y="83" text-anchor="middle" font-size="12.5" font-style="italic" fill="#FFFFFF">&#171;interface&#187; Map</text>
+
+  <line x1="750" y1="101" x2="750" y2="140" stroke="#7A4E9E" stroke-width="2"/>
+  <rect x="670" y="140" width="160" height="40" rx="5" fill="#F3EAF7" stroke="#7A4E9E" stroke-width="2"/>
+  <text x="750" y="165" text-anchor="middle" font-size="11.5" font-family="Consolas, monospace" fill="#1F2A33">HashMap</text>
+
+  <rect x="600" y="220" width="330" height="90" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="765" y="245" text-anchor="middle" font-size="12" fill="#1F2A33">Map TIDAK termasuk Collection:</text>
+  <text x="765" y="265" text-anchor="middle" font-size="12" fill="#1F2A33">Map menyimpan pasangan kunci-nilai,</text>
+  <text x="765" y="285" text-anchor="middle" font-size="12" fill="#1F2A33">bukan sekumpulan nilai tunggal.</text>
+
+  <rect x="60" y="400" width="880" height="90" rx="8" fill="#FFFFFF" stroke="#1F3B57" stroke-width="1.5"/>
+  <text x="500" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Pemakaian pada SIP-USG</text>
+  <text x="90" y="450" font-size="12" fill="#1F2A33"><tspan font-family="Consolas, monospace">Catalog</tspan> memakai <tspan font-family="Consolas, monospace">Map&lt;String, LibraryItem&gt;</tspan> agar pencarian berdasarkan kode</text>
+  <text x="90" y="470" font-size="12" fill="#1F2A33">koleksi (kunci) berjalan cepat, lalu <tspan font-family="Consolas, monospace">List&lt;LibraryItem&gt;</tspan> dipakai saat data perlu diurutkan.</text>
+</svg>

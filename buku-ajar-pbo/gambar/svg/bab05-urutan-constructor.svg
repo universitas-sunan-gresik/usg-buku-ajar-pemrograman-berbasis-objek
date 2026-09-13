@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="480" fill="#FFFFFF"/>
+  <text x="450" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">URUTAN PEMANGGILAN CONSTRUCTOR</text>
+
+  <text x="230" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Induk (superclass)</text>
+  <line x1="230" y1="70" x2="230" y2="420" stroke="#B9C2CA" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <text x="650" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Turunan (subclass)</text>
+  <line x1="650" y1="70" x2="650" y2="420" stroke="#B9C2CA" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <rect x="580" y="90" width="140" height="40" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="650" y="115" text-anchor="middle" font-size="12" fill="#1F2A33">new Turunan()</text>
+
+  <line x1="650" y1="130" x2="650" y2="170" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="665" y="155" font-size="11" fill="#5A6B7B">panggil super()</text>
+
+  <line x1="650" y1="170" x2="260" y2="170" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+
+  <rect x="160" y="180" width="140" height="55" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="230" y="203" text-anchor="middle" font-size="12" fill="#1F2A33">Constructor</text>
+  <text x="230" y="219" text-anchor="middle" font-size="12" fill="#1F2A33">Induk berjalan</text>
+
+  <rect x="150" y="260" width="160" height="46" rx="4" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="1.5"/>
+  <text x="230" y="288" text-anchor="middle" font-size="11.5" fill="#215E3A">cetak "1. Constructor Induk"</text>
+
+  <line x1="230" y1="306" x2="230" y2="340" stroke="#1F3B57" stroke-width="2"/>
+  <line x1="230" y1="340" x2="650" y2="340" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="440" y="332" text-anchor="middle" font-size="11" fill="#5A6B7B">kembali, lanjutkan Turunan</text>
+
+  <rect x="570" y="350" width="160" height="55" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="650" y="373" text-anchor="middle" font-size="12" fill="#1F2A33">Constructor</text>
+  <text x="650" y="389" text-anchor="middle" font-size="12" fill="#1F2A33">Turunan berjalan</text>
+
+  <rect x="560" y="430" width="180" height="40" rx="4" fill="#FFF3E5" stroke="#D9822B" stroke-width="1.5"/>
+  <text x="650" y="454" text-anchor="middle" font-size="11.5" fill="#7A4A16">cetak "2. Constructor Turunan"</text>
+
+  <defs>
+    <marker id="pa" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/>
+    </marker>
+  </defs>
+</svg>

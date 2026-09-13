@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#FFFFFF"/>
+  <text x="450" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">RANCANGAN TATA LETAK FORM DATA BUKU</text>
+
+  <rect x="150" y="55" width="600" height="440" rx="6" fill="#FFFFFF" stroke="#1F3B57" stroke-width="2"/>
+  <rect x="150" y="55" width="600" height="26" fill="#1F3B57"/>
+  <text x="460" y="73" text-anchor="middle" font-size="12" fill="#FFFFFF">SIP-USG - Data Buku</text>
+
+  <rect x="165" y="95" width="570" height="90" rx="4" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="450" y="112" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F3B57">NORTH: panel form (GridLayout 2x1)</text>
+  <rect x="180" y="120" width="90" height="24" fill="#FFFFFF" stroke="#5A6B7B"/>
+  <rect x="280" y="120" width="90" height="24" fill="#FFFFFF" stroke="#5A6B7B"/>
+  <rect x="380" y="120" width="90" height="24" fill="#FFFFFF" stroke="#5A6B7B"/>
+  <rect x="480" y="120" width="90" height="24" fill="#FFFFFF" stroke="#5A6B7B"/>
+  <rect x="580" y="120" width="60" height="24" fill="#FFFFFF" stroke="#5A6B7B"/>
+  <text x="220" y="136" text-anchor="middle" font-size="9" fill="#5A6B7B">kode</text>
+  <text x="325" y="136" text-anchor="middle" font-size="9" fill="#5A6B7B">judul</text>
+  <text x="425" y="136" text-anchor="middle" font-size="9" fill="#5A6B7B">penulis</text>
+  <text x="525" y="136" text-anchor="middle" font-size="9" fill="#5A6B7B">isbn</text>
+  <text x="610" y="136" text-anchor="middle" font-size="9" fill="#5A6B7B">tahun</text>
+
+  <rect x="200" y="155" width="90" height="24" rx="4" fill="#D9822B"/>
+  <text x="245" y="171" text-anchor="middle" font-size="10" fill="#FFFFFF">Tambah</text>
+  <rect x="300" y="155" width="90" height="24" rx="4" fill="#D9822B"/>
+  <text x="345" y="171" text-anchor="middle" font-size="10" fill="#FFFFFF">Hapus</text>
+  <rect x="400" y="155" width="110" height="24" rx="4" fill="#D9822B"/>
+  <text x="455" y="171" text-anchor="middle" font-size="10" fill="#FFFFFF">Muat Ulang</text>
+
+  <rect x="165" y="195" width="570" height="280" rx="4" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="450" y="213" text-anchor="middle" font-size="11" font-weight="bold" fill="#215E3A">CENTER: JScrollPane berisi JTable</text>
+  <rect x="180" y="222" width="540" height="28" fill="#D9D9D9" stroke="#5A6B7B"/>
+  <text x="240" y="240" text-anchor="middle" font-size="9.5" fill="#1F2A33">Kode</text>
+  <text x="380" y="240" text-anchor="middle" font-size="9.5" fill="#1F2A33">Judul</text>
+  <text x="520" y="240" text-anchor="middle" font-size="9.5" fill="#1F2A33">Penulis</text>
+  <text x="650" y="240" text-anchor="middle" font-size="9.5" fill="#1F2A33">Tahun</text>
+  <rect x="180" y="250" width="540" height="24" fill="#FFFFFF" stroke="#C7CDD3"/>
+  <rect x="180" y="274" width="540" height="24" fill="#FFFFFF" stroke="#C7CDD3"/>
+  <rect x="180" y="298" width="540" height="24" fill="#FFFFFF" stroke="#C7CDD3"/>
+
+  <rect x="60" y="505" width="780" height="45" rx="6" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="450" y="532" text-anchor="middle" font-size="12" fill="#1F2A33">BorderLayout membagi frame: NORTH untuk input, CENTER untuk tabel data.</text>
+</svg>

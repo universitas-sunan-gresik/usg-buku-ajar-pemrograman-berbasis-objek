@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="420" fill="#FFFFFF"/>
+  <text x="450" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#B54444">SEBELUM REFACTORING</text>
+
+  <rect x="280" y="60" width="340" height="200" fill="#FBE7E7" stroke="#B54444" stroke-width="2"/>
+  <text x="450" y="85" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">LibraryServiceBad</text>
+  <line x1="280" y1="95" x2="620" y2="95" stroke="#B54444" stroke-width="1"/>
+  <text x="295" y="115" font-size="11" fill="#1F2A33">- dao : BookDAOImpl</text>
+  <line x1="280" y1="125" x2="620" y2="125" stroke="#B54444" stroke-width="1"/>
+  <text x="295" y="145" font-size="11" fill="#1F2A33">+ processLoan(code, nama, jenis)</text>
+  <text x="295" y="168" font-size="10.5" fill="#7A2E2E">- memvalidasi ketersediaan</text>
+  <text x="295" y="188" font-size="10.5" fill="#7A2E2E">- menghitung denda (if/else jenis)</text>
+  <text x="295" y="208" font-size="10.5" fill="#7A2E2E">- menyimpan ke basis data</text>
+  <text x="295" y="228" font-size="10.5" fill="#7A2E2E">- mencetak notifikasi</text>
+  <text x="295" y="248" font-size="10.5" fill="#7A2E2E" font-style="italic">(satu kelas, empat tanggung jawab)</text>
+
+  <line x1="450" y1="260" x2="450" y2="295" stroke="#B54444" stroke-width="2" stroke-dasharray="2,2"/>
+  <path d="M420,280 L450,300 L480,280" fill="none" stroke="#B54444" stroke-width="1.5"/>
+
+  <rect x="330" y="300" width="240" height="46" rx="6" fill="#FFFFFF" stroke="#5A6B7B" stroke-width="1.5"/>
+  <text x="450" y="328" text-anchor="middle" font-size="12" fill="#1F2A33">BookDAOImpl (konkret)</text>
+
+  <rect x="60" y="360" width="780" height="50" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="1.2"/>
+  <text x="450" y="380" text-anchor="middle" font-size="12" fill="#7A4A16">Melanggar SRP (terlalu banyak tugas), OCP (if/else per jenis),</text>
+  <text x="450" y="398" text-anchor="middle" font-size="12" fill="#7A4A16">dan DIP (bergantung pada kelas konkret, bukan interface).</text>
+</svg>

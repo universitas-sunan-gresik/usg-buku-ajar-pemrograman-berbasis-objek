@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="400" fill="#FFFFFF"/>
+  <text x="475" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">POLA FACTORY: LibraryItemFactory</text>
+
+  <rect x="370" y="55" width="210" height="90" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="475" y="80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1F2A33">LibraryItemFactory</text>
+  <line x1="370" y1="90" x2="580" y2="90" stroke="#2E6DA4" stroke-width="1"/>
+  <text x="382" y="108" font-size="10" fill="#1F2A33">+ createBook(...)</text>
+  <text x="382" y="123" font-size="10" fill="#1F2A33">+ createJournal(...)</text>
+  <text x="382" y="138" font-size="10" fill="#1F2A33">+ createDigital(...)</text>
+
+  <line x1="420" y1="145" x2="200" y2="220" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#pf)"/>
+  <line x1="475" y1="145" x2="475" y2="220" stroke="#D9822B" stroke-width="1.5" marker-end="url(#pf)"/>
+  <line x1="530" y1="145" x2="750" y2="220" stroke="#3E8E5A" stroke-width="1.5" marker-end="url(#pf)"/>
+
+  <rect x="100" y="220" width="200" height="50" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="200" y="250" text-anchor="middle" font-size="12" fill="#1F2A33">Book</text>
+
+  <rect x="375" y="220" width="200" height="50" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="475" y="250" text-anchor="middle" font-size="12" fill="#1F2A33">Journal</text>
+
+  <rect x="650" y="220" width="200" height="50" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="750" y="250" text-anchor="middle" font-size="12" fill="#1F2A33">DigitalItem</text>
+
+  <rect x="60" y="300" width="830" height="80" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="475" y="325" text-anchor="middle" font-size="12.5" fill="#1F2A33">Kode pemanggil cukup memanggil LibraryItemFactory.createJournal(...)</text>
+  <text x="475" y="347" text-anchor="middle" font-size="12.5" fill="#1F2A33">tanpa perlu menuliskan "new Journal(...)" secara langsung; detail</text>
+  <text x="475" y="369" text-anchor="middle" font-size="12.5" fill="#1F2A33">konstruksi objek terpusat dan mudah diubah di satu tempat.</text>
+
+  <defs>
+    <marker id="pf" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5A6B7B"/></marker>
+  </defs>
+</svg>

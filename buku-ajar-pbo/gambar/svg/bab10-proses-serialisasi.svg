@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="460" fill="#FFFFFF"/>
+  <text x="500" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">PROSES SERIALIZATION DAN DESERIALIZATION</text>
+
+  <rect x="40" y="70" width="220" height="90" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="150" y="100" text-anchor="middle" font-size="13" fill="#1F2A33">List&lt;LibraryItem&gt;</text>
+  <text x="150" y="120" text-anchor="middle" font-size="11" fill="#5A6B7B">objek hidup di memori</text>
+  <text x="150" y="138" text-anchor="middle" font-size="10" font-style="italic" fill="#5A6B7B">(implements Serializable)</text>
+
+  <line x1="260" y1="115" x2="330" y2="115" stroke="#1F3B57" stroke-width="2" marker-end="url(#ps)"/>
+  <text x="295" y="100" text-anchor="middle" font-size="11" fill="#1F3B57">writeObject()</text>
+
+  <rect x="330" y="70" width="220" height="90" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="440" y="100" text-anchor="middle" font-size="13" fill="#1F2A33">katalog.dat</text>
+  <text x="440" y="120" text-anchor="middle" font-size="11" fill="#5A6B7B">representasi byte objek</text>
+  <text x="440" y="138" text-anchor="middle" font-size="10" fill="#5A6B7B">tersimpan permanen di disk</text>
+
+  <line x1="550" y1="115" x2="620" y2="115" stroke="#1F3B57" stroke-width="2" marker-end="url(#ps)"/>
+  <text x="585" y="100" text-anchor="middle" font-size="11" fill="#1F3B57">readObject()</text>
+
+  <rect x="620" y="70" width="220" height="90" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="730" y="100" text-anchor="middle" font-size="13" fill="#1F2A33">List&lt;LibraryItem&gt;</text>
+  <text x="730" y="120" text-anchor="middle" font-size="11" fill="#5A6B7B">objek hidup lagi</text>
+  <text x="730" y="138" text-anchor="middle" font-size="10" fill="#5A6B7B">(program baru/dijalankan ulang)</text>
+
+  <text x="150" y="195" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E6DA4">SERIALIZATION</text>
+  <text x="730" y="195" text-anchor="middle" font-size="12" font-weight="bold" fill="#3E8E5A">DESERIALIZATION</text>
+
+  <rect x="60" y="230" width="880" height="180" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="258" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2A33">Mengapa Perlu Serializable?</text>
+  <text x="90" y="285" font-size="12" fill="#1F2A33">JVM perlu izin eksplisit untuk mengubah objek menjadi aliran byte, karena tidak semua</text>
+  <text x="90" y="305" font-size="12" fill="#1F2A33">objek aman disimpan begitu saja (misalnya koneksi jaringan yang sedang aktif). Menandai</text>
+  <text x="90" y="325" font-size="12" fill="#1F2A33">kelas dengan <tspan font-family="Consolas, monospace">implements Serializable</tspan> adalah pernyataan eksplisit bahwa seluruh</text>
+  <text x="90" y="345" font-size="12" fill="#1F2A33">atributnya (dan atribut objek yang dirujuknya) aman dan bermakna untuk disimpan.</text>
+  <text x="90" y="370" font-size="12" fill="#1F2A33">Karena <tspan font-family="Consolas, monospace">Book</tspan> memiliki atribut <tspan font-family="Consolas, monospace">Isbn</tspan>, kelas <tspan font-family="Consolas, monospace">Isbn</tspan> pun harus ikut Serializable.</text>
+  <text x="90" y="393" font-size="12" fill="#1F2A33">Field <tspan font-family="Consolas, monospace">serialVersionUID</tspan> menjaga kompatibilitas format antarversi kelas.</text>
+
+  <defs>
+    <marker id="ps" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/></marker>
+  </defs>
+</svg>

@@ -79,10 +79,13 @@ Diambil dari pengukuran langsung [REF]. Semua angka bersifat wajib.
 **Gaya khusus `BukuKode` (listing program Java):**
 Consolas 9,5 pt, spasi 1,0, rata kiri (tanpa *justify*), latar abu-abu 5 %,
 garis tepi tipis 0,5 pt, indentasi kiri 0,5 cm, **penomoran baris tidak dipakai** (agar mudah disalin mahasiswa),
-lebar maksimum **64 karakter per baris** supaya tidak terpotong pada halaman 15,5 cm.
+lebar maksimum **54 karakter per baris** supaya tidak terpotong pada halaman 15,5 cm
+(diukur langsung dari lebar glyph Consolas 9,5 pt: lebar teks isi 11,2 cm dikurangi indentasi kiri 0,5 cm
+hanya memuat ± 56 karakter monospace; 54 dipakai sebagai batas aman baku, menggantikan angka 64 pada versi awal aturan ini).
 
-**Prasyarat teknis produksi:** `pip install python-docx` (belum terpasang di mesin ini),
-font Arial tersedia di macOS. Consolas tidak tersedia di macOS — gunakan **Courier New 10 pt** sebagai pengganti resmi jika Consolas tidak terpasang, dan konsisten di seluruh buku.
+**Prasyarat teknis produksi:** Python dengan `python-docx`, font Arial dan **Consolas 9,5 pt** (tersedia di Windows dan Microsoft Word),
+JDK 21 untuk uji kompilasi listing, serta Microsoft Word untuk memperbarui field daftar isi.
+Bila naskah dibangun di mesin tanpa Consolas, Word akan menggantinya saat berkas dibuka; berkas akhir tetap memakai Consolas.
 
 ---
 
@@ -149,7 +152,7 @@ Blok 9 dan 12 adalah penyesuaian untuk mata kuliah pemrograman; sisanya identik 
 - Konvensi penamaan Java wajib: kelas `PascalCase`, method dan variabel `camelCase`, konstanta `UPPER_SNAKE_CASE`, paket `id.ac.usg.sip`.
 - Setiap listing **wajib diikuti** blok `Keluaran Program:` berisi keluaran konsol yang sebenarnya.
 - Maksimum **40 baris** per listing. Lebih dari itu, pecah menjadi beberapa listing.
-- Panjang baris maksimum **64 karakter**.
+- Panjang baris maksimum **54 karakter** (lihat perhitungan pada Bagian 2).
 
 **Gambar dan diagram**
 - Label `Gambar <n>. <Judul>` diletakkan **di bawah** gambar, rata tengah, Arial 10 pt; penomoran berurutan satu buku.
@@ -213,15 +216,17 @@ Kolom minggu, Sub-CPMK, CPMK, rubrik, dan bobot diambil langsung dari Matriks Pe
 - **CPMK3** — Melalui proyek pemrograman, mahasiswa mampu membangun aplikasi berorientasi objek yang terintegrasi dengan basis data dan antarmuka grafis (GUI) sebagai produk.
 - **CPMK4** — Mahasiswa mampu berkolaborasi secara efektif dan etis dalam merancang, mengembangkan, mendokumentasikan, dan mempresentasikan produk aplikasi berorientasi objek.
 
-**Bunyi Sub-CPMK yang disalin verbatim:**
-- **Sub-CPMK1** — menjelaskan paradigma OOP serta menerapkan konsep kelas dan objek (atribut, method, constructor) dalam bahasa Java.
-- **Sub-CPMK2** — menerapkan enkapsulasi dan information hiding melalui access modifier dan getter/setter.
-- **Sub-CPMK3** — merancang model berorientasi objek menggunakan diagram kelas UML beserta relasi antarkelas.
-- **Sub-CPMK4** — mengimplementasikan pewarisan (inheritance) dan polimorfisme (polymorphism) dalam bahasa Java.
-- **Sub-CPMK5** — menerapkan abstraksi melalui abstract class dan interface.
-- **Sub-CPMK6** — mengimplementasikan penanganan eksepsi (exception handling), collection, dan generics.
-- **Sub-CPMK7** — membangun aplikasi berorientasi objek yang terintegrasi dengan operasi berkas/persistence, basis data (JDBC/CRUD), dan antarmuka grafis (GUI).
-- **Sub-CPMK8** — menerapkan prinsip desain berorientasi objek (SOLID/design pattern) serta mengembangkan dan mempresentasikan proyek aplikasi berorientasi objek secara kolaboratif.
+**Bunyi Sub-CPMK yang disalin verbatim** (sesuai [RPS] Bagian 2, tanpa keterangan "(Turunan CPMK…)"):
+- **Sub-CPMK1** — Mahasiswa mampu menjelaskan paradigma pemrograman berorientasi objek serta menerapkan konsep kelas dan objek (atribut, method, constructor) dalam bahasa Java.
+- **Sub-CPMK2** — Mahasiswa mampu menerapkan enkapsulasi dan information hiding melalui access modifier dan getter/setter.
+- **Sub-CPMK3** — Mahasiswa mampu merancang model berorientasi objek menggunakan diagram kelas UML beserta relasi antarkelas.
+- **Sub-CPMK4** — Mahasiswa mampu mengimplementasikan pewarisan (inheritance) dan polimorfisme (polymorphism) dalam bahasa Java.
+- **Sub-CPMK5** — Mahasiswa mampu menerapkan abstraksi melalui abstract class dan interface.
+- **Sub-CPMK6** — Mahasiswa mampu mengimplementasikan penanganan eksepsi (exception handling), collection, dan generics.
+- **Sub-CPMK7** — Mahasiswa mampu membangun aplikasi berorientasi objek yang terintegrasi dengan operasi berkas/persistence, basis data (JDBC/CRUD), dan antarmuka grafis (GUI).
+- **Sub-CPMK8** — Mahasiswa mampu menerapkan prinsip desain berorientasi objek (SOLID/design pattern) serta mengembangkan dan mempresentasikan proyek aplikasi berorientasi objek secara kolaboratif.
+
+Istilah Inggris di dalam bunyi CPMK/Sub-CPMK boleh dicetak miring sesuai Bagian 6 butir 2; kata-katanya tidak diubah.
 
 ---
 
@@ -403,7 +408,7 @@ Bab dinyatakan selesai hanya jika seluruh butir tercentang.
 - [ ] Ada `Soal/Pertanyaan` 6–8 butir berjenjang C2–C6, minimal satu berkonteks SIP-USG
 - [ ] Ada `Rujukan Bab` 2–4 sumber, semuanya ada di Daftar Pustaka
 - [ ] Minimal 1 diagram; seluruh gambar bernomor urut dan berketerangan di bawah
-- [ ] Seluruh listing bernomor urut, ≤40 baris, ≤64 karakter per baris, dan **sudah diuji kompilasi pada JDK 21**
+- [ ] Seluruh listing bernomor urut, ≤40 baris, ≤54 karakter per baris, dan **sudah diuji kompilasi pada JDK 21**
 - [ ] Setiap listing diikuti `Keluaran Program:`
 - [ ] Kode SIP-USG menyambung dari bab sebelumnya
 - [ ] Istilah asing miring pada kemunculan pertama dan masuk Glosarium
@@ -424,14 +429,18 @@ Bab dinyatakan selesai hanya jika seluruh butir tercentang.
 **Struktur folder kerja:**
 
 ```
-buku ajar PBO/
-├── aturan/ATURAN-BUKU-AJAR-PBO.md      (dokumen ini)
-├── naskah/00-front-matter.md
-├── naskah/bab-01.md … bab-15.md
-├── naskah/90-back-matter.md
-├── kode/bab-01/ … bab-15/             (proyek Java yang diuji kompilasi)
-├── gambar/gambar-01.png …
-└── keluaran/Buku-Ajar-PBO.docx
+.
+├── ATURAN-BUKU-AJAR-PBO.md                (dokumen ini)
+├── reference/                             (RPS dan contoh format buku ajar)
+└── buku-ajar-pbo/
+    ├── Buku-Ajar-PBO.docx                 (luaran utama, dirakit dari naskah/)
+    ├── naskah/00-front-matter.md
+    ├── naskah/bab-01.md … bab-15.md
+    ├── naskah/90-back-matter.md
+    ├── kode/bab-01/ … bab-15/             (proyek Java yang diuji kompilasi)
+    ├── gambar/gambar-01.png …
+    ├── tools/build_docx.py, pratinjau.ps1
+    └── keluaran/Buku-Ajar-PBO.pdf         (pratinjau, tidak di-commit)
 ```
 
 ---

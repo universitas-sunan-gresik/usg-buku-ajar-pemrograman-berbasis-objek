@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="520" fill="#FFFFFF"/>
+  <text x="500" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">ARSITEKTUR AKHIR SIP-USG</text>
+
+  <rect x="30" y="55" width="200" height="70" rx="8" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="130" y="80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1F2A33">SipUsgApp</text>
+  <text x="130" y="98" text-anchor="middle" font-size="10" fill="#5A6B7B">Menu utama (JMenuBar)</text>
+  <text x="130" y="112" text-anchor="middle" font-size="10" fill="#5A6B7B">titik masuk aplikasi</text>
+
+  <line x1="130" y1="125" x2="130" y2="155" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+
+  <rect x="30" y="160" width="200" height="70" rx="8" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="130" y="185" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1F2A33">View</text>
+  <text x="130" y="203" text-anchor="middle" font-size="10" fill="#5A6B7B">BookFormFrame</text>
+  <text x="130" y="217" text-anchor="middle" font-size="10" fill="#5A6B7B">(Swing, id...view)</text>
+
+  <line x1="230" y1="195" x2="290" y2="195" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+
+  <rect x="295" y="160" width="200" height="70" rx="8" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="395" y="185" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1F2A33">Controller</text>
+  <text x="395" y="203" text-anchor="middle" font-size="10" fill="#5A6B7B">BookController</text>
+  <text x="395" y="217" text-anchor="middle" font-size="10" fill="#5A6B7B">(id...controller)</text>
+
+  <line x1="495" y1="195" x2="555" y2="195" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+
+  <rect x="560" y="130" width="220" height="130" rx="8" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="670" y="152" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1F2A33">Model</text>
+  <text x="670" y="170" text-anchor="middle" font-size="10" fill="#5A6B7B">Book, BookDAO/Impl,</text>
+  <text x="670" y="184" text-anchor="middle" font-size="10" fill="#5A6B7B">LibraryItemFactory,</text>
+  <text x="670" y="198" text-anchor="middle" font-size="10" fill="#5A6B7B">LoanValidator,</text>
+  <text x="670" y="212" text-anchor="middle" font-size="10" fill="#5A6B7B">DatabaseConnection</text>
+  <text x="670" y="228" text-anchor="middle" font-size="9.5" font-style="italic" fill="#215E3A">(Singleton)</text>
+  <text x="670" y="244" text-anchor="middle" font-size="9.5" fill="#5A6B7B">(id...model)</text>
+
+  <line x1="780" y1="195" x2="840" y2="195" stroke="#1F3B57" stroke-width="2" marker-end="url(#pa)"/>
+
+  <rect x="845" y="160" width="130" height="70" rx="8" fill="#F3EAF7" stroke="#7A4E9E" stroke-width="2"/>
+  <text x="910" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F2A33">MariaDB</text>
+  <text x="910" y="203" text-anchor="middle" font-size="10" fill="#5A6B7B">sip_usg.books</text>
+  <text x="910" y="217" text-anchor="middle" font-size="9.5" fill="#5A6B7B">(via JDBC)</text>
+
+  <rect x="30" y="290" width="945" height="200" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="500" y="316" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2A33">Empat Pilar dan Pola Desain yang Bekerja di Balik Layar</text>
+  <text x="55" y="342" font-size="11" fill="#1F2A33"><tspan font-weight="bold">Enkapsulasi</tspan> (Bab II-III): atribut Book, Member, Isbn tersembunyi di balik getter/setter</text>
+  <text x="55" y="364" font-size="11" fill="#1F2A33"><tspan font-weight="bold">Pewarisan &amp; Polimorfisme</tspan> (Bab V-VI): LibraryItem diwarisi Book, Journal, DigitalItem</text>
+  <text x="55" y="386" font-size="11" fill="#1F2A33"><tspan font-weight="bold">Abstraksi</tspan> (Bab VII): interface Borrowable/Printable menyembunyikan detail implementasi</text>
+  <text x="55" y="408" font-size="11" fill="#1F2A33"><tspan font-weight="bold">Exception &amp; Generic</tspan> (Bab VIII-IX): BookNotAvailableException, Repository&lt;T&gt;</text>
+  <text x="55" y="430" font-size="11" fill="#1F2A33"><tspan font-weight="bold">SOLID</tspan> (Bab XIII): LibraryService dan LoanValidator bertanggung jawab tunggal</text>
+  <text x="55" y="452" font-size="11" fill="#1F2A33"><tspan font-weight="bold">Singleton &amp; Factory</tspan> (Bab XIV): satu koneksi basis data, satu titik pembuatan objek</text>
+  <text x="55" y="474" font-size="11" fill="#1F2A33"><tspan font-weight="bold">MVC</tspan> (Bab XIV-XV): View, Controller, dan Model terpisah rapi seperti digambarkan di atas</text>
+
+  <defs>
+    <marker id="pa" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F3B57"/></marker>
+  </defs>
+</svg>

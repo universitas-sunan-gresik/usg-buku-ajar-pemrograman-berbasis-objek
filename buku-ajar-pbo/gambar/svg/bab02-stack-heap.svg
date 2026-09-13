@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 480" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="480" fill="#FFFFFF"/>
+
+  <text x="150" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">STACK</text>
+  <text x="150" y="54" text-anchor="middle" font-size="11.5" fill="#5A6B7B">(variabel method main)</text>
+  <text x="650" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#3E8E5A">HEAP</text>
+  <text x="650" y="54" text-anchor="middle" font-size="11.5" fill="#5A6B7B">(objek hasil "new")</text>
+
+  <rect x="40" y="80" width="220" height="60" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="150" y="105" text-anchor="middle" font-size="13" fill="#1F2A33">b1 : Book</text>
+  <text x="150" y="123" text-anchor="middle" font-size="11" fill="#5A6B7B">(referensi/alamat)</text>
+
+  <rect x="40" y="160" width="220" height="60" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="150" y="185" text-anchor="middle" font-size="13" fill="#1F2A33">b2 : Book</text>
+  <text x="150" y="203" text-anchor="middle" font-size="11" fill="#5A6B7B">(referensi/alamat)</text>
+
+  <!-- panah dari stack ke heap -->
+  <path d="M260,110 C 420,110 420,170 480,170" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#pb)"/>
+  <path d="M260,190 C 420,190 420,330 480,330" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#pb)"/>
+
+  <rect x="485" y="120" width="380" height="110" rx="8" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="675" y="142" text-anchor="middle" font-size="13" font-weight="bold" fill="#215E3A">objek Book #1</text>
+  <text x="500" y="162" font-size="11.5" fill="#1F2A33">title = "Basis Data"</text>
+  <text x="500" y="180" font-size="11.5" fill="#1F2A33">author = "Kadir, A."</text>
+  <text x="500" y="198" font-size="11.5" fill="#1F2A33">publicationYear = 2012</text>
+  <text x="500" y="216" font-size="11.5" fill="#1F2A33">available = true</text>
+
+  <rect x="485" y="280" width="380" height="110" rx="8" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="675" y="302" text-anchor="middle" font-size="13" font-weight="bold" fill="#215E3A">objek Book #2</text>
+  <text x="500" y="322" font-size="11.5" fill="#1F2A33">title = "Struktur Data"</text>
+  <text x="500" y="340" font-size="11.5" fill="#1F2A33">author = "Sedgewick, R."</text>
+  <text x="500" y="358" font-size="11.5" fill="#1F2A33">publicationYear = 2016</text>
+  <text x="500" y="376" font-size="11.5" fill="#1F2A33">available = true</text>
+
+  <rect x="40" y="410" width="825" height="55" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="1.2"/>
+  <text x="452" y="432" text-anchor="middle" font-size="12.5" fill="#7A4A16" font-style="italic">Variabel b1 dan b2 di stack hanya menyimpan alamat; data</text>
+  <text x="452" y="450" text-anchor="middle" font-size="12.5" fill="#7A4A16" font-style="italic">objek yang sesungguhnya tersimpan terpisah di heap.</text>
+
+  <defs>
+    <marker id="pb" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#2E6DA4"/>
+    </marker>
+  </defs>
+</svg>

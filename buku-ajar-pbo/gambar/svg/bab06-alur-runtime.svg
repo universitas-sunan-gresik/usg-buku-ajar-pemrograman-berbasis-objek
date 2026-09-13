@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 560" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="560" fill="#FFFFFF"/>
+  <text x="475" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">ALUR PEMILIHAN METHOD SAAT RUNTIME</text>
+  <text x="475" y="52" text-anchor="middle" font-size="12.5" font-family="Consolas, monospace" fill="#5A6B7B">for (LibraryItem it : semua) { it.calculateFine(5); }</text>
+
+  <rect x="380" y="80" width="190" height="46" rx="6" fill="#1F3B57"/>
+  <text x="475" y="108" text-anchor="middle" font-size="12.5" fill="#FFFFFF">it.calculateFine(5)</text>
+
+  <line x1="475" y1="126" x2="475" y2="160" stroke="#1F3B57" stroke-width="2"/>
+  <path d="M475,160 L455,200 L495,200 Z" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.5"/>
+  <text x="475" y="184" text-anchor="middle" font-size="11" fill="#1F2A33">objek apa</text>
+  <text x="475" y="197" text-anchor="middle" font-size="11" fill="#1F2A33">sebenarnya?</text>
+
+  <line x1="475" y1="200" x2="200" y2="260" stroke="#2E6DA4" stroke-width="2"/>
+  <line x1="475" y1="200" x2="475" y2="260" stroke="#D9822B" stroke-width="2"/>
+  <line x1="475" y1="200" x2="750" y2="260" stroke="#3E8E5A" stroke-width="2"/>
+
+  <text x="230" y="245" font-size="11.5" fill="#2E6DA4">Book</text>
+  <text x="475" y="245" text-anchor="middle" font-size="11.5" fill="#D9822B">Journal</text>
+  <text x="720" y="245" font-size="11.5" fill="#3E8E5A">DigitalItem</text>
+
+  <rect x="90" y="260" width="240" height="70" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="210" y="285" text-anchor="middle" font-size="11.5" fill="#1F2A33">Tidak override,</text>
+  <text x="210" y="303" text-anchor="middle" font-size="11.5" fill="#1F2A33">pakai LibraryItem</text>
+  <text x="210" y="319" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#1F2A33">hari x 500</text>
+
+  <rect x="355" y="260" width="240" height="70" rx="6" fill="#FFF7F0" stroke="#D9822B" stroke-width="2"/>
+  <text x="475" y="285" text-anchor="middle" font-size="11.5" fill="#1F2A33">Override di Journal</text>
+  <text x="475" y="303" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#1F2A33">hari x 300</text>
+
+  <rect x="620" y="260" width="240" height="70" rx="6" fill="#EAF7EF" stroke="#3E8E5A" stroke-width="2"/>
+  <text x="740" y="285" text-anchor="middle" font-size="11.5" fill="#1F2A33">Override di DigitalItem</text>
+  <text x="740" y="303" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#1F2A33">selalu 0</text>
+
+  <rect x="90" y="370" width="770" height="150" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="475" y="398" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1F2A33">Hasil pada Bab06Demo (denda 5 hari terlambat)</text>
+  <text x="120" y="425" font-size="12.5" font-family="Consolas, monospace" fill="#1F2A33">Basis Data: Rp2500.0</text>
+  <text x="120" y="448" font-size="12.5" font-family="Consolas, monospace" fill="#1F2A33">Jurnal SI: Rp1500.0</text>
+  <text x="120" y="471" font-size="12.5" font-family="Consolas, monospace" fill="#1F2A33">E-Modul Java Dasar: Rp0.0</text>
+  <text x="475" y="500" text-anchor="middle" font-size="12" font-style="italic" fill="#5A6B7B">Satu baris kode, tiga hasil berbeda: itulah polimorfisme.</text>
+</svg>

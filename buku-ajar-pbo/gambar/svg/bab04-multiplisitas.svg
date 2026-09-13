@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 480" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="950" height="480" fill="#FFFFFF"/>
+  <text x="475" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F3B57">MULTIPLISITAS PADA RELASI</text>
+
+  <rect x="60" y="80" width="150" height="55" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="135" y="112" text-anchor="middle" font-size="13" fill="#1F2A33">Member</text>
+
+  <rect x="450" y="80" width="150" height="55" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="525" y="112" text-anchor="middle" font-size="13" fill="#1F2A33">Loan</text>
+
+  <line x1="210" y1="107" x2="450" y2="107" stroke="#1F3B57" stroke-width="2"/>
+  <rect x="222" y="88" width="30" height="20" fill="#FFFFFF"/>
+  <text x="237" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F3B57">1</text>
+  <rect x="390" y="88" width="46" height="20" fill="#FFFFFF"/>
+  <text x="413" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F3B57">0..*</text>
+
+  <text x="330" y="70" text-anchor="middle" font-size="12" fill="#5A6B7B">"meminjam melalui"</text>
+
+  <rect x="700" y="80" width="180" height="55" rx="6" fill="#EAF2F8" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="790" y="112" text-anchor="middle" font-size="13" fill="#1F2A33">Book</text>
+
+  <line x1="600" y1="107" x2="700" y2="107" stroke="#1F3B57" stroke-width="2"/>
+  <rect x="655" y="88" width="46" height="20" fill="#FFFFFF"/>
+  <text x="678" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F3B57">0..*</text>
+  <rect x="608" y="88" width="30" height="20" fill="#FFFFFF"/>
+  <text x="623" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F3B57">1</text>
+
+  <text x="475" y="200" text-anchor="middle" font-size="13" fill="#1F2A33">Dibaca dari sisi Member: "satu Member dapat memiliki</text>
+  <text x="475" y="220" text-anchor="middle" font-size="13" fill="#1F2A33">nol sampai banyak Loan." Dibaca dari sisi Loan menuju Book:</text>
+  <text x="475" y="240" text-anchor="middle" font-size="13" fill="#1F2A33">"satu Loan selalu merujuk tepat satu Book."</text>
+
+  <rect x="90" y="280" width="770" height="180" rx="8" fill="#F4F6F7" stroke="#5A6B7B" stroke-width="1.2"/>
+  <text x="475" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F2A33">Notasi Multiplisitas Umum</text>
+
+  <text x="120" y="340" font-size="13" fill="#1F2A33"><tspan font-weight="bold">1</tspan>       tepat satu</text>
+  <text x="120" y="368" font-size="13" fill="#1F2A33"><tspan font-weight="bold">0..1</tspan>    nol atau satu</text>
+  <text x="500" y="340" font-size="13" fill="#1F2A33"><tspan font-weight="bold">0..*</tspan> atau <tspan font-weight="bold">*</tspan>   nol sampai banyak</text>
+  <text x="500" y="368" font-size="13" fill="#1F2A33"><tspan font-weight="bold">1..*</tspan>    satu sampai banyak</text>
+  <text x="120" y="410" font-size="12.5" fill="#5A6B7B">Angka diletakkan dekat kelas yang MEMILIKI jumlah</text>
+  <text x="120" y="430" font-size="12.5" fill="#5A6B7B">kemunculan tersebut relatif terhadap satu objek di ujung lain.</text>
+</svg>
